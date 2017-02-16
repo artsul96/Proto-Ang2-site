@@ -4,9 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 
+import {LocService} from './Localisation/localisation.service';
 import {ClocksComponent} from './Localisation/clocks.component';
 import {LocalisationComponent} from './Localisation/localisation.component';
-//C:\Users\Artur Sulski\Projekty\angular-2-beta-boilerplate-master\src\app\Localisation\clocks.component.ts
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,7 @@ import {LocalisationComponent} from './Localisation/localisation.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [LocService],
+  bootstrap: [AppComponent,]
 })
 export class AppModule { }

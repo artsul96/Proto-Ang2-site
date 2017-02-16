@@ -1,10 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl:'./app.component.template.html',
-  styleUrl: './app.component.styles.css'
+  template:`<localisation (myCity)="getmyCity($event)" (refCity)="getrefCity($event)"></localisation>`,
+  // templateUrl:'./app.component.template.html',
+  styleUrls: ['./app.component.styles.css']
 })
 export class AppComponent {
-  
+
+@Input() myCity; 
+@Input() refCity;
+getmyCity($event){
+  this.myCity=($event);
+};
+getrefCity($event){
+  this.refCity=($event);
+  console.log("Parent : "+this.myCity+ "-->"+this.refCity);
+};
+
+ngOnInit(){
+
+}
 }
