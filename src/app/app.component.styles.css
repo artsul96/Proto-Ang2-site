@@ -1,0 +1,21 @@
+nav{
+    background-color: #AFA;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a {
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #277;
+    text-decoration: underline;
+}
+
+my-clocks {
+    display: none;
+}

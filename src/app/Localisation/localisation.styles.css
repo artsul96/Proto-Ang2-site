@@ -1,0 +1,12 @@
+
+div.location{
+    margin-top:10px;
+    text-align: center;
+    display: block;
+    max-width:30%;
+    float:right;
+}
+
+div.location button{
+    margin-top:5px;
+}

@@ -1,13 +1,14 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'my-clocks',
+  selector: 'homesite',
   template: `
-  {{myCity}} + {{refCity}}
-`,
+ {{myCity}} i tekst i coś tam {{refCity}}
+ `,
 })
-export class ClocksComponent {
+export class HomeComponent {
   @Input() myCity;
   @Input() refCity;
+
 
 }
